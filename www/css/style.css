@@ -1,0 +1,11 @@
+/**/
+h1{
+text-align: center;
+color: white;
+}
+label{
+  color: white;
+}
+body{
+  background-image: linear-gradient(to right, blue, blueviolet, purple); 
+}
