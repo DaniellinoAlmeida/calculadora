@@ -1,108 +1,117 @@
-//Area dos botoes numericos
-
-$(document).on("click","#vl1",function(){
-  var vl1 = $("#tela").val("#tela");
-  $("#tela").val("1");
-});
-
-$(document).on("click","#vl2",function(){
-  var vl2 = $("#tela").val();
-  $("#tela").val("2");
-});
-
-$(document).on("click","#vl3",function(){
-  var vl3 = $("#tela").val();
-  $("#tela").val("3");
-});
-
-$(document).on("click","#vl4",function(){
-  var vl4 = $("#tela").val();
-  $("#tela").val("4");
-});
-
-$(document).on("click","#vl5",function(){
-  var vl5 = $("#tela").val();
-  $("#tela").val("5");
-});
-
-$(document).on("click","#vl6",function(){
-  var vl6 = $("#tela").val();
-  $("#tela").val("6");
-});
-
-$(document).on("click","#vl7",function(){
-  var vl7 = $("#tela").val();
-  $("#tela").val("7");
-});
-
-$(document).on("click","#vl8",function(){
-  var vl8 = $("#tela").val();
-  $("#tela").val("8");
-});
-
-$(document).on("click","#vl9",function(){
-  var vl9 = $("#tela").val();
-  $("#tela").val("9");
-});
-
-$(document).on("click","#vl0",function(){
-  var vl0 = $("#tela").val();
-  $("#tela").val("0");
-});
-
-$(document).on("click","#btnsomar",function(){
-  var soma = $("#tela").val();
-  $("#tela").val("+");
-});
-
-$(document).on("click","#vl1",function(){
-  var vl1 = $("#tela").val();
-  $("#tela").val("1");
-});
+ window.onload = function(){
+//variaveis
+var valor1;
+var valor2;
+var operador;
 
 
-//Area dos botoes de ação
+  var btn7 = document.getElementById('btn7');
+  btn7.addEventListener('click', function(){
+  document.getElementById('display').value += 7;
+  });
 
-/*function somar(){
-  var vl1 = $('vl1').val;
-  var vl2 = $('vl2').val;
-  var soma = $('btnsomar').val;
-  var tela = $('tela').val;
+  var btn8 = document.getElementById('btn8');
+  btn8.addEventListener('click', function(){
+  document.getElementById('display').value += 8;
+  });
 
-  if(soma == 1){
-    vl2
-  }
-}*/
+  var btn9 = document.getElementById('btn9');
+  btn9.addEventListener('click', function(){
+  document.getElementById('display').value += 9;
+  });
 
-$(document).on("click","#btnsomar",function(){     
-  var valor1 = $("#valor1").val();
-  var valor2 = $("#valor2").val();
-  var result = parseFloat(valor1) + parseFloat(valor2);
-  $("#resultado").val(result);
-}); 
+  var btn4 = document.getElementById('btn4');
+  btn4.addEventListener('click', function(){
+  document.getElementById('display').value += 4;
+  });
 
-$(document).on("click","#btnsubtrair",function(){
-  var valor1 = $("#valor1").val();
-  var valor2 = $("#valor2").val();
-  var result = parseFloat(valor1) - parseFloat(valor2);
-  $("#resultado").val(result);
-}); 
+  var btn5 = document.getElementById('btn5');
+  btn5.addEventListener('click', function(){
+  document.getElementById('display').value += 5;
+  });
 
-$(document).on("click","#btndividir",function(){
-  var valor1 = $("#valor1").val();
-  var valor2 = $("#valor2").val();
-  var result = parseFloat(valor1) / parseFloat(valor2);
-  $("#resultado").val(result);
-}); 
+  var btn6 = document.getElementById('btn6');
+  btn6.addEventListener('click', function(){
+  document.getElementById('display').value += 6;
+  });
 
-$(document).on("click","#btnmultiplicar",function(){
-  var valor1 = $("#valor1").val();
-  var valor2 = $("#valor2").val();
-  var result = parseFloat(valor1) * parseFloat(valor2);
-  $("#resultado").val(result);
-}); 
+  var btn1 = document.getElementById('btn1');
+  btn1.addEventListener('click', function(){
+  document.getElementById('display').value += 1;
+  });
 
-  $(document).on("click","#btnlimpar",function(){
-  var vl1 = $("#tela").val();
-  $("#tela").val("0");
-}); 
+  var btn2 = document.getElementById('btn2');
+  btn2.addEventListener('click', function(){
+  document.getElementById('display').value += 2;
+  });
+
+  var btn3 = document.getElementById('btn3');
+  btn3.addEventListener('click', function(){
+  document.getElementById('display').value += 3;
+  });
+
+  var btn0 = document.getElementById('btn0');
+  btn0.addEventListener('click', function(){
+  document.getElementById('display').value += 0;
+  });
+
+  var btnCE = document.getElementById('btnCE');
+  btnCE.addEventListener('click', function(){
+  document.getElementById('display').value = "";
+  });
+
+  var btnSomar = document.getElementById('btnSomar');
+  btnSomar.addEventListener('click', function(){
+      valor1 = document.getElementById('display').value;
+      operador = "somar";
+      document.getElementById('display').value = "";
+  });
+
+  var btnSub = document.getElementById('btnSub');
+  btnSub.addEventListener('click', function(){
+      valor1 = document.getElementById('display').value;
+      operador = "sub";
+      document.getElementById('display').value = "";
+  });
+
+  var btnDiv = document.getElementById('btnDiv');
+  btnDiv.addEventListener('click', function(){
+      valor1 = document.getElementById('display').value;
+      operador = "div";
+      document.getElementById('display').value = "";
+  });
+
+  var btnMult = document.getElementById('btnMult');
+  btnMult.addEventListener('click', function(){
+      valor1 = document.getElementById('display').value;
+      operador = "mult";
+      document.getElementById('display').value = "";
+  });
+  var btnPor = document.getElementById('btnPor');
+  btnPor.addEventListener('click', function(){
+    operador = "porcen";
+   document.getElementById('display').value = "";
+  })
+
+  var btnIgual = document.getElementById('btnIgual');
+  btnIgual.addEventListener('click', function(){
+      valor2 = document.getElementById('display').value;
+      if(operador == "somar"){
+        result = parseInt(valor1) + parseInt (valor2);
+      }
+      if(operador == "sub"){
+        result = parseInt(valor1) - parseInt (valor2);
+      }
+      if(operador == "mult"){
+        result = parseInt(valor1) * parseInt (valor2);
+      }
+      if(operador == "div"){
+        result = parseInt(valor1) / parseInt (valor2);
+      }
+      if(operador == "porcen"){
+        result = parseFloat(valor1) * parseFloat(valor2)/100;
+      }
+      document.getElementById('display').value = result;
+  });
+
+}

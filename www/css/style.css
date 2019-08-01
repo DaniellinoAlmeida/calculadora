@@ -1,24 +1,37 @@
-h1{
-text-align: center;
-color: white;
-}
-label{
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  padding: 20px;
-  border: solid 2px transparent;
-}
+/**/
 body{
-  background-image: linear-gradient(to right, blue, blueviolet, purple); 
+  background-color: #000000;
 }
-#tela{
-  height: 100px;
-  margin: 10px 0px 10px 0px;
-  font-size: 30px;
-  text-align: right;
+.calc{
+	width: 105%;
+	margin: 5px auto;
+	border-radius: 400px;
+	background-color:	#000000;
 }
-label:hover{
-  border: solid 2px;
-
+.container{
+	border-radius: 24px;
+}
+.botao{
+	font-size: 20px;
+	height: 80px;
+  background-color:	#000000;
+  color: white;
+}
+.boto{
+  font-size: 20px;
+  background-color: #000000;
+  color: #1E90FF;
+}
+.bto{
+  font-size: 20px;
+  background-color: #000000;
+  color: #1E90FF;
+  text-align: center;
+}
+.inp{
+	font-size: 25px;
+	height: 90px;
+}
+#display {
+	background-color: #000000;
 }

@@ -16,118 +16,84 @@
   
 </head>
 <body>
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12">
-              </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-                <input type="number" class="form-control" id="tela" value="0" readonly>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl7">7</label>
-            </div>
-           </div>
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl8">8</label>
-            </div>
-           </div>
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl9">9</label>
-            </div>
-           </div>
-  
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="btndivir">÷</label>
-            </div>
-           </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
-             <div class="form-group">
-                   <label for="" id="vl4">4</label>
-            </div>
-           </div>
-
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl5">5</label>
-            </div>
-           </div>
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl6">6</label>
-            </div>
-           </div>
-  
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="btmult">x</label>
-            </div>
-           </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
+     <body>
+          <div class="container"><br><br>
+            <div class="jumbotron calc">
+            <div class="row">
               <div class="form-group">
-                <label for="" id="vl1">1</label>
+              <div class="col-md-12">
+                <input type="number" name="" value="" class=" form-control inp" id="display" readonly>
               </div>
-           </div>
+            </div>
+          </div>
+            <div class="row"><br><br>
+            <div class="col-xs-6">
+              <button type="button" name="button" class="btn btn-block bto" style="width:120px; height:40px; border-radius:8px; margin:3px" id="btnPor" onclick="porce()"> % </button>
+            </div>
+            <div class="col-xs-6">
+              <button type="button" name="button" class="btn btn-block bto" style="width:120px; height:40px; border-radius:8px; margin:3px" id="btnQua"> X² </button>
+            </div>
+          </div>
+          <div class="row"><br><br>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn7"> 7 </button>
+            </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn8"> 8 </button>
+            </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn9"> 9 </button>
+            </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block boto" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btnMult"> X </button>
+            </div>
+          </div>
 
+          <div class="row"><br><br>
             <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl2">2</label>
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn4"> 4 </button>
             </div>
-           </div>
             <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl3">3</label>
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn5"> 5 </button>
             </div>
-           </div>
-  
             <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="btndividir">-</label>
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn6"> 6 </button>
             </div>
-           </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block boto" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btnSub"> - </button>
+            </div>
           </div>
-                <div class="row">
-            <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="vl0">0</label>
-            </div>
-           </div>
 
+          <div class="row"><br><br>
             <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="btnvirgula">,</label>
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn1"> 1 </button>
             </div>
-           </div>
             <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="btnigual">=</label>
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px;; border-radius:8px; margin:3px" id="btn2"> 2 </button>
             </div>
-           </div>
-  
             <div class="col-xs-3">
-             <div class="form-group">
-              <label for="" id="btnsomar">+</label>
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn3"> 3 </button>
             </div>
-           </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="form-group">
-              <button class="btn btn-danger btn-block" id="btnlimpar" block>limpar</button>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block boto" style="width:60px; height:40px;; border-radius:8px; margin:3px" id="btnDiv"> ÷ </button>
             </div>
           </div>
-      </div>
+
+          <div class="row"><br><br>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block boto" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btnCE"> CE </button>
+            </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block botao" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btn0"> 0 </button>
+            </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block boto" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btnSomar"> + </button>
+            </div>
+            <div class="col-xs-3">
+              <button type="button" name="button" class="btn btn-block boto" style="width:60px; height:40px; border-radius:8px; margin:3px" id="btnIgual"> = </button><br>
+            </div>
+          </div>
+            </div>
+          </div>
 </body>
 </html>
