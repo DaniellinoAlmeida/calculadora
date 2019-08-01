@@ -1,11 +1,24 @@
-/**/
 h1{
 text-align: center;
 color: white;
 }
 label{
   color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  border: solid 2px transparent;
 }
 body{
   background-image: linear-gradient(to right, blue, blueviolet, purple); 
+}
+#tela{
+  height: 100px;
+  margin: 10px 0px 10px 0px;
+  font-size: 30px;
+  text-align: right;
+}
+label:hover{
+  border: solid 2px;
+
 }
